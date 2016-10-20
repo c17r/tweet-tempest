@@ -1,0 +1,5 @@
+{% load render_bundle from webpack_loader %}
+
+<tempest-app></tempest-app>
+{% render_bundle 'vendor' %}
+{% render_bundle 'main' %}

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tweet Tempest!</title>
+	</head>
+	<body>
+		{% if user and user.is_authenticated %}
+			{% include "backend/_main.html" %}
+		{% else %}
+			{% include "backend/_login.html" %}
+		{% endif %}
+	</body>
+</html>
