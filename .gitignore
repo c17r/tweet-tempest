@@ -3,6 +3,8 @@
 secrets.json
 db.sqlite3
 webpack-stats.json
+.DS_Store
+.project
 
 #### Python gitignore
 

@@ -1,6 +1,6 @@
 from django.conf import settings
 
-from social.apps.django_app.default.models import UserSocialAuth
+from social_django.models import UserSocialAuth
 import twitter
 
 

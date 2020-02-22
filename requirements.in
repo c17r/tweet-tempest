@@ -1,0 +1,7 @@
+social-auth-app-django
+django-environ
+twitter
+django-webpack-loader
+django-extensions
+django<4.0
+Werkzeug

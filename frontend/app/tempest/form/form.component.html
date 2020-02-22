@@ -1,0 +1,37 @@
+<table border="0">
+
+    <tr>
+        <th>Are you responding to specific user(s)?</th>
+        <td><input [(ngModel)]="peeps" (keyup)="processInput()" type="text" name="peeps" ></td>
+    </tr>
+
+    <tr>
+        <th>Display tweet count in each tweet?</th>
+        <td><input [(ngModel)]="tweetCount" (change)="processInput()" type="checkbox" name="tweet_count"></td>
+    </tr>
+
+    <tr>
+        <th>Start counting at?</th>
+        <td><input [(ngModel)]="startCount" (keyup)="processInput()" [disabled]="!tweetCount" type="number" name="start_count"></td>
+    </tr>
+
+    <tr>
+        <th colspan="2">Type in your message below</th>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <textarea [(ngModel)]="message" (keyup)="processInput()" name="message" rows="25" cols="80"></textarea>
+            <br>
+            <button [disabled]="disableSend" (click)="sendTweets()">Tweet the Tempest!</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+    </tr>
+    <tr *ngFor="let entry of result">
+        <td width="10" colspan="2">
+            <div style="height:20px;"></div>
+            {{entry.text}}
+        </td>
+    </tr>
+</table>

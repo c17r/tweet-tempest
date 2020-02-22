@@ -1,9 +1,9 @@
-from django.conf.urls import url, include
+from django.urls import path
 
 from backend import views
 
 urlpatterns = [
-    url(r'^$', views.HomepageView.as_view()),
-    url('api/twitter/info/$', views.TwitterInfoView.as_view()),
-    url('api/twitter/tweet/$', views.SendTweetView.as_view()),
+    path('', views.HomepageView.as_view()),
+    path('api/twitter/info/', views.TwitterInfoView.as_view()),
+    path('api/twitter/tweet/', views.SendTweetView.as_view()),
 ]

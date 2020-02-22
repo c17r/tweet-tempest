@@ -1,5 +1,8 @@
 {% load render_bundle from webpack_loader %}
 
-<tempest-app></tempest-app>
+<app-root></app-root>
+{% render_bundle 'runtime' %}
+{% render_bundle 'polyfills' %}
 {% render_bundle 'vendor' %}
 {% render_bundle 'main' %}
+{% render_bundle 'styles' %}

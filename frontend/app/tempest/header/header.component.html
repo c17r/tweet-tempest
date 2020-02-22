@@ -1,4 +1,4 @@
-<div>
+<div *ngIf="(person$ | async) as person">
 	<div [innerText]="person.screen_name"></div>
 	<div><img [src]="person.profile_image_url"/></div>
 	<div><a href="/logout">logout</a></div>
