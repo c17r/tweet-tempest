@@ -10,7 +10,7 @@ defusedxml==0.6.0         # via python3-openid, social-auth-core
 django-environ==0.4.5
 django-extensions==2.2.1
 django-webpack-loader==0.6.0
-django==1.11.22
+django==1.11.28
 idna==2.8                 # via requests
 oauthlib==3.0.2           # via requests-oauthlib, social-auth-core
 pyjwt==1.7.1              # via social-auth-core
